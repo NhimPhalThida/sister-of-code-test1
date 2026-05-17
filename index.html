@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homwork1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header class="main-header">
+    <h2>Student Practice Webpage</h2>
+    <p>HTML + CSS Practice (Froms + Tables Advanced)</p>
+  </header>
+ 
+  <section class="block-1">
+      <h3>Image Section</h3>
+      <img src="https://i.pinimg.com/1200x/70/16/ce/7016ce1ecf3fdf3451091aba66b451a7.jpg" alt="">
+  </section>
+
+  <section class="block-1">
+    <div>
+      <h3>Advanced Tabel</h3>
+      <table class="table-stu">
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Scores</th>
+                <th rowspan="2">Grade</th>
+            </tr>
+            <tr>
+                <th>Math</th>
+                <th>CS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>90</td>
+                <td>95</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>80</td>
+                <td>85</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+      </div>
+    </table>
+  </section>
+
+  <section class="block-1">
+      <form>
+      <div class="from-info">
+        <h3>Form 1: Basic Info</h3>
+        <label>Name <span class="star">*</span></label> <br>
+        <input type="text">
+      </div>  
+      <div class="from-info">
+        <label>Email <span class="star">*</span></label> <br>
+        <input type="email">
+      </div>   
+      <div class="from-info">
+        <label>Password <span class="star">*</span></label><br> 
+        <input type="password">
+      </div>
+      <div class="from-info">
+        <label>Update file </label> <br>
+        <input type="file" >
+      </div>
+      <div class="from-btt">
+        <button type="submit" class="btt">submit</button>
+        <button type="reset" class="btt">reset</button>
+      </div>    
+    </form>
+  </section>
+   
+  <section class="block-1">
+    <form>
+      <div class="from-info">
+        <h3>Form 2: Survey Info</h3>
+        <label>Choose Course <span class="star">*</span></label><br> 
+        <input type="text" placeholder=" --Seclect-- ">
+      </div>
+      <div class="from-info ">
+        <label for="text" >Gender</label><br>
+        <div class="check-box">
+          <input type="radio" name="gender">Male
+          <input type="radio" name="gender">Female
+        </div>
+      </div>
+      <div class="from-info">
+        <label for="text">Skills</label><br>
+        <div class="check-box">
+          <label><input type="checkbox" name="skill" > HTML</label>
+          <label><input type="checkbox" name="skill"> CSS</label>
+          <label><input type="checkbox" name="skill"> JS</label>
+        </div>
+      </div>
+      <div class="from-info">
+        <label>Phone <span class="star">*</span></label>
+        <textarea type="tel" name="tel" id="" cols="30" rows="2"></textarea>
+      </div>
+      <div class="from-info">
+        <label for="text">Massage</label>
+        <textarea name="text" id="" cols="30" rows="6"></textarea>
+      </div>
+      <div class="from-btt">
+        <button type="submit" class="btt">submit</button>
+      </div> 
+    </form>
+  </section>  
+</body>
+</html>
