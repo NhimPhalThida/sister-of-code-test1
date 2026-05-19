@@ -15,9 +15,17 @@
  
   <section class="block-1">
       <h3>Image Section</h3>
-      <p>this is the image</p>
-      <p>this is new update</p>
-      <img src="https://i.pinimg.com/1200x/70/16/ce/7016ce1ecf3fdf3451091aba66b451a7.jpg" alt="">
+      <img src="https://i.pinimg.com/1200x/70/16/ce/7016ce1ecf3fdf3451091aba66b451a7.jpg" alt="Section pic">
+  </section>
+
+  <section class="block-1">
+    <h3>Image Cricle</h3>
+    <img src="https://i.pinimg.com/1200x/70/16/ce/7016ce1ecf3fdf3451091aba66b451a7.jpg" alt="Cricle pic" class="cricle-img">
+  </section>
+
+  <section class="block-1">
+    <h3>Image Oval</h3>
+    <img src="https://i.pinimg.com/1200x/70/16/ce/7016ce1ecf3fdf3451091aba66b451a7.jpg" alt="Oval pic" class="oval-img">
   </section>
 
   <section class="block-1">
@@ -55,24 +63,24 @@
 
   <section class="block-1">
       <form>
-      <div class="from-info">
+      <div class="form-info">
         <h3>Form 1: Basic Info</h3>
-        <label>Name <span class="star">*</span></label> <br>
-        <input type="text">
+        <label for="name">Name <span class="star">*</span></label>
+        <input type="text" id="name">
       </div>  
-      <div class="from-info">
-        <label>Email <span class="star">*</span></label> <br>
-        <input type="email">
+      <div class="form-info">
+        <label for="email">Email <span class="star">*</span></label>
+        <input type="email" id="email">
       </div>   
-      <div class="from-info">
-        <label>Password <span class="star">*</span></label><br> 
-        <input type="password">
+      <div class="form-info">
+        <label for="pw">Password <span class="star">*</span></label>
+        <input type="password" id="pw">
       </div>
-      <div class="from-info">
-        <label>Update file </label> <br>
-        <input type="file" >
+      <div class="form-info">
+        <label for="upfile">Update file </label>
+        <input type="file" id="upfile">
       </div>
-      <div class="from-btt">
+      <div class="form-btt">
         <button type="submit" class="btt">submit</button>
         <button type="reset" class="btt">reset</button>
       </div>    
@@ -81,35 +89,39 @@
    
   <section class="block-1">
     <form>
-      <div class="from-info">
+      <div class="form-info">
         <h3>Form 2: Survey Info</h3>
-        <label>Choose Course <span class="star">*</span></label><br> 
-        <input type="text" placeholder=" --Seclect-- ">
+        <label for="ch-course">Choose Course <span class="star">*</span></label>
+        <input type="text" placeholder=" --Seclect-- " id="ch-course">
       </div>
-      <div class="from-info ">
-        <label for="text" >Gender</label><br>
+      <div class="form-info ">
+        <label>Gender</label>
         <div class="check-box">
-          <input type="radio" name="gender">Male
-          <input type="radio" name="gender">Female
+          <label>
+            <input type="radio" name="gender">
+            Male</label>
+          <label>
+            <input type="radio" name="gender">
+            Female</label>
         </div>
       </div>
-      <div class="from-info">
-        <label for="text">Skills</label><br>
-        <div class="check-box">
-          <label><input type="checkbox" name="skill" > HTML</label>
-          <label><input type="checkbox" name="skill"> CSS</label>
-          <label><input type="checkbox" name="skill"> JS</label>
+      <div class="form-info">
+        <label for="text">Skills</label>
+        <div class="check-box" id="checkb">
+          <label><input type="checkbox" name="checkb" >CSS</label>
+          <label><input type="checkbox" name="checkb" >HTML</label>
+          <label><input type="checkbox" name="checkb" >JS</label>
         </div>
       </div>
-      <div class="from-info">
-        <label>Phone <span class="star">*</span></label>
-        <textarea type="tel" name="tel" id="" cols="30" rows="2"></textarea>
+      <div class="form-info">
+        <label for="ph">Phone <span class="star">*</span></label>
+        <textarea type="tel" name="tel" id="ph" cols="30" rows="2"></textarea>
       </div>
-      <div class="from-info">
-        <label for="text">Massage</label>
-        <textarea name="text" id="" cols="30" rows="6"></textarea>
+      <div class="form-info">
+        <label for="sms">Massage</label>
+        <textarea name="text" id="sms" cols="30" rows="6"></textarea>
       </div>
-      <div class="from-btt">
+      <div class="form-btt">
         <button type="submit" class="btt">submit</button>
       </div> 
     </form>
